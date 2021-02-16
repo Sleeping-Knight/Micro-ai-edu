@@ -234,6 +234,10 @@ if __name__=='__main__':
 #读取数据
 
 ```python
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
 path = 'iris.csv'
 Data = pd.read_csv(path)
 
@@ -242,7 +246,7 @@ X = Data.iloc[:, :cols - 1]  # 表示X读取了除最后一列的所有数据
 X = np.array(X)
 iris_class = Data.iloc[:, cols - 1:cols]  # iris_class表示鸢尾花的分类
 iris_class = np.array(iris_class)
-```
+
 
 #处理数据，将鸢尾花的名字映射为0,1,2,三个数字
 
