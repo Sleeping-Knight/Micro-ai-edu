@@ -217,7 +217,7 @@ if __name__=='__main__':
     show_3d_scatter_picture(X,Y,Z)
     show_3d_predicted_surface(net.k1,net.k2,net.b,X,Y,Z)
 ```
-## 二、线性回归模型（medium难度）
+## 二、非线性多分类模型（medium难度）
 
 ### 1.**任务描述**
 
