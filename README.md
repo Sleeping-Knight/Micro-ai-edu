@@ -340,7 +340,7 @@ def Neural_Net_Main_function():
 ```python
 # 统计训练准确率
 def learn_score(y_test_true, y_predict):
-    return sum(y_test_true == y_predict) / len(y_true)
+    return sum(y_test_true == y_predict) / len(y_test_true)
 
 
 OneHot = np.identity(3)
@@ -483,7 +483,7 @@ def Neural_Net_Main_function():
 
 # 统计训练准确率
 def learn_score(y_test_true, y_predict):
-    return sum(y_test_true == y_predict) / len(y_true)
+    return sum(y_test_true == y_predict) / len(y_test_true)
 
 
 OneHot = np.identity(3)
