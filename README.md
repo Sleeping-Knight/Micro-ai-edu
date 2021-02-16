@@ -221,8 +221,7 @@ if __name__=='__main__':
 
 ### 1.**任务描述**
 
-给定含有1000条记录的数据集`mlm.csv`，其中每条记录均包含两个自变量`x`,`y`和一个因变量`z`，它们之间存在较为明显的线性关系。请对数据进行三维可视化分析，并训练处良好的线性回归模型。
-
+鸢尾花数据集iris.csv含有150条记录，每条记录包含萼片长度sepal length、萼片宽度sepal width、 花瓣长度petal length和花瓣宽度petal width四个数值型特征，以及它的所属类别class（可能为Iris-setosa,Iris-versicolor,Iris-virginica三者之一）。请利用该数据集训练出一个良好的非线性分类器。
 ### 2.使用的库
 
 - pandas
@@ -340,8 +339,8 @@ def Neural_Net_Main_function():
 
 ```python
 # 统计训练准确率
-def learn_score(y_true, y_predict):
-    return sum(y_true == y_predict) / len(y_true)
+def learn_score(y_test_true, y_predict):
+    return sum(y_test_true == y_predict) / len(y_true)
 
 
 OneHot = np.identity(3)
@@ -483,8 +482,8 @@ def Neural_Net_Main_function():
 
 
 # 统计训练准确率
-def learn_score(y_true, y_predict):
-    return sum(y_true == y_predict) / len(y_true)
+def learn_score(y_test_true, y_predict):
+    return sum(y_test_true == y_predict) / len(y_true)
 
 
 OneHot = np.identity(3)
